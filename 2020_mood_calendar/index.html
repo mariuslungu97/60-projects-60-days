@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/abeff45496.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    
+    <title>2020 Mood Calendar</title>
+</head>
+<body>
+    
+    <div class="buttons">
+        <button class="buttons__btn buttons__btn--random">
+            <i class="fas fa-random"></i>
+        </button>
+        <button class="buttons__btn buttons__btn--redo">
+            <i class="fas fa-redo"></i>
+        </button>
+        <button class="buttons__btn buttons__btn--grid">
+            <i class="fas fa-th"></i>
+        </button>
+        <button class="buttons__btn buttons__btn--card">
+            <i class="fas fa-layer-group"></i>
+        </button>
+    </div>
+
+    <div class="container">
+
+        <div class="calendar-cockpit">
+
+            <h2 class="calendar-cockpit__header">2020 Mood Calendar</h2>
+            <p class="calendar-cockpit__text u-margin-bot-1">~ color each day depending on what your mood was / is ~</p>
+
+            <p class="calendar-cockpit__text">Select Mood:</p>
+
+            <div class="calendar-cockpit__moods" id="cockpitMoods">
+                <button data-id="1" class="calendar-cockpit__moods--mood calendar-cockpit__moods--mood-1">
+                    <i class="fas fa-laugh"></i>
+                </button>
+                <button data-id="2" class="calendar-cockpit__moods--mood calendar-cockpit__moods--mood-2">
+                    <i class="fas fa-smile"></i>
+                </button>
+                <button data-id="3" class="calendar-cockpit__moods--mood calendar-cockpit__moods--mood-3">
+                    <i class="fas fa-meh"></i>
+                </button>
+                <button data-id="4" class="calendar-cockpit__moods--mood calendar-cockpit__moods--mood-4">
+                    <i class="fas fa-frown"></i>
+                </button>
+                <button data-id="5" class="calendar-cockpit__moods--mood calendar-cockpit__moods--mood-5">
+                    <i class="fas fa-sad-tear"></i>
+                </button>
+            </div>
+
+            <p class="calendar-cockpit__text">then click on the circles below</p>
+
+        </div>
+
+        <div class="calendar-months" id="calendarMonths">
+
+            <!-- <div class="calendar-month">
+                <div class="calendar-month__calendar">
+                    
+                    <table class="month">
+                        <caption class="month__title u-margin-1">January:</caption>
+                        <thead class="month__days">
+                            <tr>
+                                <th class="month__day" scope="col">Sun</th>
+                                <th class="month__day" scope="col">Mon</th>
+                                <th class="month__day" scope="col">Tue</th>
+                                <th class="month__day" scope="col">Wed</th>
+                                <th class="month__day" scope="col">Thu</th>
+                                <th class="month__day" scope="col">Fri</th>
+                                <th class="month__day" scope="col">Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month__dates">
+                            <tr>
+                                <td class="month__date"></td>
+                                <td class="month__date"></td>
+                                <td class="month__date"><span class="month__date--style">1</span></td>
+                                <td class="month__date"><span class="month__date--style">2</span></td>
+                                <td class="month__date"><span class="month__date--style">3</span></td>
+                                <td class="month__date"><span class="month__date--style">4</span></td>
+                                <td class="month__date"><span class="month__date--style">5</span></td>
+                            </tr>
+                            <tr>
+                                <td class="month__date"><span class="month__date--style">6</span></td>
+                                <td class="month__date"><span class="month__date--style">7</span></td>
+                                <td class="month__date"><span class="month__date--style">8</span></td>
+                                <td class="month__date"><span class="month__date--style">9</span></td>
+                                <td class="month__date"><span class="month__date--style">10</span></td>
+                                <td class="month__date"><span class="month__date--style">11</span></td>
+                                <td class="month__date"><span class="month__date--style">12</span></td>
+                            </tr>
+                            <tr>
+                                <td class="month__date"><span class="month__date--style">13</span></td>
+                                <td class="month__date"><span class="month__date--style">14</span></td>
+                                <td class="month__date"><span class="month__date--style">15</span></td>
+                                <td class="month__date"><span class="month__date--style">16</span></td>
+                                <td class="month__date"><span class="month__date--style">17</span></td>
+                                <td class="month__date"><span class="month__date--style">18</span></td>
+                                <td class="month__date"><span class="month__date--style">19</span></td>
+                            </tr>
+                            <tr>
+                                <td class="month__date"><span class="month__date--style">20</span></td>
+                                <td class="month__date"><span class="month__date--style">21</span></td>
+                                <td class="month__date"><span class="month__date--style">22</span></td>
+                                <td class="month__date"><span class="month__date--style">23</span></td>
+                                <td class="month__date"><span class="month__date--style">24</span></td>
+                                <td class="month__date"><span class="month__date--style">25</span></td>
+                                <td class="month__date"><span class="month__date--style">26</span></td>
+                            </tr>
+                            <tr>
+                                <td class="month__date"><span class="month__date--style">27</span></td>
+                                <td class="month__date"><span class="month__date--style">28</span></td>
+                                <td class="month__date"><span class="month__date--style">29</span></td>
+                                <td class="month__date"><span class="month__date--style">30</span></td>
+                                <td class="month__date"><span class="month__date--style">31</span></td>
+                                <td class="month__date"></td>
+                                <td class="month__date"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+            
+                </div>
+                <div class="calendar-month__info">
+                    <h2 class="calendar-month__info--header u-margin-1">Events:</h2>
+                    <div class="calendar-month__info--events">
+                        <ul>
+                            <li>January 1, 2020: <span>New Years Celebration, Depravation</span></li>
+                            <li>January 1, 2020: <span>New Years Celebration, Depravation</span></li>
+                            <li>January 1, 2020: <span>New Years Celebration, Depravation</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- <table class="month">
+                <caption class="month__title">January</caption>
+                <thead class="month__days">
+                    <tr>
+                        <th class="month__day" scope="col">Sun</th>
+                        <th class="month__day" scope="col">Mon</th>
+                        <th class="month__day" scope="col">Tue</th>
+                        <th class="month__day" scope="col">Wed</th>
+                        <th class="month__day" scope="col">Thu</th>
+                        <th class="month__day" scope="col">Fri</th>
+                        <th class="month__day" scope="col">Sat</th>
+                    </tr>
+                </thead>
+                <tbody class="month__dates">
+                    <tr>
+                        <td class="month__date"></td>
+                        <td class="month__date"></td>
+                        <td class="month__date"><span class="month__date--style">1</span></td>
+                        <td class="month__date"><span class="month__date--style">2</span></td>
+                        <td class="month__date"><span class="month__date--style">3</span></td>
+                        <td class="month__date"><span class="month__date--style">4</span></td>
+                        <td class="month__date"><span class="month__date--style">5</span></td>
+                    </tr>
+                    <tr>
+                        <td class="month__date"><span class="month__date--style">6</span></td>
+                        <td class="month__date"><span class="month__date--style">7</span></td>
+                        <td class="month__date"><span class="month__date--style">8</span></td>
+                        <td class="month__date"><span class="month__date--style">9</span></td>
+                        <td class="month__date"><span class="month__date--style">10</span></td>
+                        <td class="month__date"><span class="month__date--style">11</span></td>
+                        <td class="month__date"><span class="month__date--style">12</span></td>
+                    </tr>
+                    <tr>
+                        <td class="month__date"><span class="month__date--style">13</span></td>
+                        <td class="month__date"><span class="month__date--style">14</span></td>
+                        <td class="month__date"><span class="month__date--style">15</span></td>
+                        <td class="month__date"><span class="month__date--style">16</span></td>
+                        <td class="month__date"><span class="month__date--style">17</span></td>
+                        <td class="month__date"><span class="month__date--style">18</span></td>
+                        <td class="month__date"><span class="month__date--style">19</span></td>
+                    </tr>
+                    <tr>
+                        <td class="month__date"><span class="month__date--style">20</span></td>
+                        <td class="month__date"><span class="month__date--style">21</span></td>
+                        <td class="month__date"><span class="month__date--style">22</span></td>
+                        <td class="month__date"><span class="month__date--style">23</span></td>
+                        <td class="month__date"><span class="month__date--style">24</span></td>
+                        <td class="month__date"><span class="month__date--style">25</span></td>
+                        <td class="month__date"><span class="month__date--style">26</span></td>
+                    </tr>
+                    <tr>
+                        <td class="month__date"><span class="month__date--style">27</span></td>
+                        <td class="month__date"><span class="month__date--style">28</span></td>
+                        <td class="month__date"><span class="month__date--style">29</span></td>
+                        <td class="month__date"><span class="month__date--style">30</span></td>
+                        <td class="month__date"><span class="month__date--style">31</span></td>
+                        <td class="month__date"></td>
+                        <td class="month__date"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            -->
+        </div>
+
+        
+    </div>
+
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
