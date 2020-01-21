@@ -1,0 +1,62 @@
+
+/* Resets */
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+a, a:link, a:hover, a:visited {
+    text-decoration: none;
+    color : #000;
+}
+
+button {
+    border : none;
+    background: inherit;
+}
+
+button:focus {outline: none;}
+
+html, body {
+    height : 100%;
+}
+
+body {
+    background : #9191b5 no-repeat top left;
+    background-size: cover;
+    width : 100%;
+    height : 100%;
+    text-align: center;
+    color : #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    font-size : 9rem;
+    font-weight: bold;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    opacity: .45;
+}
+
+.instructions {
+    font-size : 1.2rem;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    opacity: .65;
+
+}
+
+.canvas {
+    position: absolute;
+    width : 100vw;
+    height : 100vh;
+    top : 0;
+    left : 0;
+    z-index: 5; 
+}
