@@ -10,3 +10,5 @@ To view the final result of any of the completed projects, visit the following l
  2. 2020 Mood Calendar: [Link](https://codepen.io/mariuslungu97/full/wvBQjzj)
  3. Particle Microscope: [Link](https://codepen.io/mariuslungu97/pen/GRgwPEO)
  4. Simulated Gravity: [Link](https://codepen.io/mariuslungu97/pen/KKwbdLR)
+ 5. Amplify: [Link](https://codepen.io/mariuslungu97/pen/povGJbM)
+ 6. Circular Motion: [Link](https://codepen.io/mariuslungu97/pen/WNbPvGm)
