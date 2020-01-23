@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Catch The Insect Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="play-game">
+            <h1 class="play-game__header u-margin-top-bot-1">Catch The Insect</h1>
+            <button class="btn btn--white" id="playGame">Play Game</button>
+        </div>
+    
+        <div class="choose-insect">
+            <h1 class="choose-insect__header">What is Your Favorite Insect?</h1>
+    
+            <div class="choose-insect__insects insects u-margin-top-bot-2">
+                <button data-id="1" class="insects__insect insects__insect--1">
+                    <span class="insects__insect--type">Fly</span>
+                    <img class="insects__insect--img" src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="Fly Image">
+                </button>
+                <button data-id="2" class="insects__insect insects__insect--1">
+                    <span class="insects__insect--type">Mosquito</span>
+                    <img class="insects__insect--img" src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="Mosquito Image">
+                </button>
+                <button data-id="3" class="insects__insect insects__insect--1">
+                    <span class="insects__insect--type">Spider</span>
+                    <img class="insects__insect--img" src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="Spider Image">
+                </button>
+                <button data-id="4" class="insects__insect insects__insect--1">
+                    <span class="insects__insect--type">Roach</span>
+                    <img class="insects__insect--img" src="http://pngimg.com/uploads/roach/roach_PNG12163.png" alt="Roach Image">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <main class="game-started">
+        <header class="game-started__header">
+            <h1 class="game-started__header--timer">Time: <span id="timerMin">00</span>:<span id="timerSec">00</span></h1>
+            <h1 class="game-started__header--score">Score: <span id="score">00</span></h1>
+        </header>
+
+        <div class="game-started__game" id="spawnInsectsDiv">
+            
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -12,3 +12,4 @@ To view the final result of any of the completed projects, visit the following l
  4. Simulated Gravity: [Link](https://codepen.io/mariuslungu97/pen/KKwbdLR)
  5. Amplify: [Link](https://codepen.io/mariuslungu97/pen/povGJbM)
  6. Circular Motion: [Link](https://codepen.io/mariuslungu97/pen/WNbPvGm)
+ 7. Catch The Insect: [Link](https://codepen.io/mariuslungu97/full/xxbMNPR)
