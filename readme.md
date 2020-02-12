@@ -13,3 +13,4 @@ To view the final result of any of the completed projects, visit the following l
  5. Amplify: [Link](https://codepen.io/mariuslungu97/pen/povGJbM)
  6. Circular Motion: [Link](https://codepen.io/mariuslungu97/pen/WNbPvGm)
  7. Catch The Insect: [Link](https://codepen.io/mariuslungu97/full/xxbMNPR)
+ 8. James Bond Tribute Page: [Link](https://codepen.io/mariuslungu97/pen/mdJeGjE)

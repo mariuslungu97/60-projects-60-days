@@ -1,0 +1,326 @@
+/* Resets */
+
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+a, a:link, a:visited, a:hover {
+    text-decoration: none;
+    color : inherit;
+}
+
+img {
+    width : 100%;
+    height : 100%;
+}
+
+/* Body Styling */
+
+body {
+    background : #eee;
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color : #000;
+    text-transform: uppercase;
+}
+
+/* Custom Classes, ID's Styling */
+
+.content-container {
+    width : 65%;
+    margin : 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 225px repeat(4, 475px) 175px;
+    grid-template-areas: 
+        "intro intro"
+        "actor1 actor1"
+        "actor2 actor2"
+        "actor3 actor3"
+        "actor4 actor4"
+        "summary summary"
+    ;
+}
+
+/* Intro Styles */
+
+.intro {
+    grid-area : intro;
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.intro-left, .intro-right {
+    padding : 0 .65rem;
+    display : flex;
+    align-items: center;
+}
+
+.intro-left {
+    justify-content: flex-end;
+}
+
+.intro-right {
+    justify-content: flex-start;
+}
+
+.intro-end {
+    position: absolute;
+    left : 50%;
+    transform: translateX(-50%);
+    bottom : 1.75rem;
+}
+
+/* Actor Styles */
+
+.actor {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.actor-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.actor-photo {
+    background-size: cover;
+    position: relative;
+}
+
+.actor-end {
+    position: absolute;
+    bottom : 1.75rem;
+}
+
+.actor-number {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    color : #E6E6E6;
+    font-size : 20rem;
+    z-index: 1;
+}
+
+.actor-list {
+    z-index : 2;
+}
+
+.actor__left-side .actor-list {
+    margin-right: 1.75rem;
+}
+
+.actor__right-side .actor-list {
+    margin-left : 1.75rem;
+}
+
+.actor-list ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.actor__left-side .actor-list ul {
+    text-align: end;
+}
+
+.actor--1 {
+    grid-area: actor1;
+}
+
+.actor--1 .right {
+    background-image: url(https://www.screengeek.net/wp-content/uploads/2018/08/james-bond-daniel-craig.jpg);
+    background-position: center center;
+}
+
+.actor--2 {
+    grid-area : actor2;
+}
+
+.actor--2 .left {
+    background-image: url(http://i.imgur.com/4MspLjL.jpg);
+    background-position: center center;
+}
+
+.actor--3 {
+    grid-area : actor3;
+}
+
+.actor--3 .right {
+    background-image: url(https://images.indianexpress.com/2015/11/james-bond-roger-moore.jpg);
+    background-position: center center;
+}
+
+.actor--4 {
+    grid-area : actor4;
+}
+
+.actor--4 .left {
+    background-image: url(https://imgc.artprintimages.com/img/print/007-james-bond-dr-no-1962_u-l-q10ts640.jpg);
+    background-position: center center;
+}
+
+.left {
+    padding-right : .65rem;
+}
+
+.right {
+    padding-left : .65rem;
+}
+
+.actor__left-side .left {
+    justify-content: flex-end;
+}
+
+.actor__right-side .left {
+    justify-content: flex-start;
+}
+
+.actor__right-side .actor-photo .actor-end {
+    right : .65rem;
+}
+
+.summary {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: summary;
+    position: relative;
+}
+
+.summary-end {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Utilities */
+
+.grey-area {
+    background-color: #C0C0C0;
+    color : #fff;
+}
+
+.white-area {
+    background-color: #fff;
+    color : #000;
+}
+
+.headline {
+    font-family: 'Holtwood One SC', sans-serif;
+    font-size : 3.5rem;
+}
+
+.headline--actor {
+    font-size : 2.75rem;
+    font-family: 'Holtwood One SC', sans-serif;
+}
+
+.lead {
+    font-size : 1.75rem;
+    color : #000;
+}
+
+/* Media Queries */
+
+@media (max-width : 768px) {
+
+    .content-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px;
+        grid-template-areas: 
+        "intro"
+        "actor1"
+        "actor1"
+        "actor2"
+        "actor2"
+        "actor3"
+        "actor3"
+        "actor4"
+        "actor4"
+        "actor4"
+        "summary"
+    ;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-left, .intro-right {
+        justify-content: center;
+    }
+    
+    .intro-left {
+        align-items: flex-end;
+    }
+    
+    .intro-right {
+        align-items: flex-start;
+    }
+
+    .actor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .actor .actor-text .actor-end {
+        display : none;
+    }
+
+    .actor-number {
+        font-size : 10rem;
+    }
+
+    .actor-list ul {
+        font-size : .9rem;
+        text-align: center;
+    }
+
+    .left {
+        padding : 1rem 0;
+        justify-content: center;
+
+    }
+    
+    .right {
+        padding : 1rem;
+        justify-content: center;
+    }
+    
+    .actor__left-side .left {
+        justify-content: center;
+    }
+
+    .actor__left-side .actor-list {
+        margin-right : 0;
+    }
+
+    .actor__left-side .actor-list ul {
+        text-align: center;
+    }
+    
+    .actor__right-side .left {
+        justify-content: center;
+    }
+
+    .summary {
+        display : none;
+    }
+    
+    .lead {
+        font-size : 1.3rem;
+    }
+
+    .headline {
+        font-size : 2.75rem;
+    }
+
+    .headline--actor {
+        font-size : 2.35rem;
+    }
+}
