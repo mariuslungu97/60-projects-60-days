@@ -14,3 +14,6 @@ To view the final result of any of the completed projects, visit the following l
  6. Circular Motion: [Link](https://codepen.io/mariuslungu97/pen/WNbPvGm)
  7. Catch The Insect: [Link](https://codepen.io/mariuslungu97/full/xxbMNPR)
  8. James Bond Tribute Page: [Link](https://codepen.io/mariuslungu97/pen/mdJeGjE)
+ 9. Password Generator : [Link](https://codepen.io/mariuslungu97/pen/RwPpxGK)
+ 10. Billionares' Responsive Table : [Link](https://codepen.io/mariuslungu97/pen/JjdWMbo)
+ 
